@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<FlowMonitor>
+  <FlowStats>
+    <Flow flowId="1" timeFirstTxPacket="+2000000000.0ns" timeFirstRxPacket="+2012085874.0ns" timeLastTxPacket="+4998270464.0ns" timeLastRxPacket="+4998585116.0ns" delaySum="+521820345.0ns" jitterSum="+153399828.0ns" lastDelay="+314652.0ns" txBytes="2305500" rxBytes="2301000" txPackets="1537" rxPackets="1534" lostPackets="3" timesForwarded="1534">
+      <delayHistogram nBins="13" >
+        <bin index="0" start="0" width="0.001" count="1528" />
+        <bin index="1" start="0.001" width="0.001" count="3" />
+        <bin index="8" start="0.008" width="0.001" count="1" />
+        <bin index="10" start="0.01" width="0.001" count="1" />
+        <bin index="12" start="0.012" width="0.001" count="1" />
+      </delayHistogram>
+      <jitterHistogram nBins="8" >
+        <bin index="0" start="0" width="0.001" count="1530" />
+        <bin index="1" start="0.001" width="0.001" count="2" />
+        <bin index="7" start="0.007" width="0.001" count="1" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="76" >
+        <bin index="75" start="1500" width="20" count="1534" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+  </FlowStats>
+  <Ipv4FlowClassifier>
+    <Flow flowId="1" sourceAddress="192.168.35.2" destinationAddress="192.168.11.1" protocol="17" sourcePort="49153" destinationPort="9">
+      <Dscp value="0x0" packets="1537" />
+    </Flow>
+  </Ipv4FlowClassifier>
+  <Ipv6FlowClassifier>
+  </Ipv6FlowClassifier>
+  <FlowProbes>
+    <FlowProbe index="0">
+      <FlowStats  flowId="1" packets="1537" bytes="2305500" delayFromFirstProbeSum="+0.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="1">
+    </FlowProbe>
+    <FlowProbe index="2">
+      <FlowStats  flowId="1" packets="1537" bytes="2305500" delayFromFirstProbeSum="+137977785.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="3">
+    </FlowProbe>
+    <FlowProbe index="4">
+      <FlowStats  flowId="1" packets="1534" bytes="2301000" delayFromFirstProbeSum="+521820345.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="5">
+    </FlowProbe>
+  </FlowProbes>
+</FlowMonitor>

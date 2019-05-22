@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<FlowMonitor>
+  <FlowStats>
+    <Flow flowId="1" timeFirstTxPacket="+2000000000.0ns" timeFirstRxPacket="+2034489459.0ns" timeLastTxPacket="+4999800000.0ns" timeLastRxPacket="+5004160002.0ns" delaySum="+88594237071.0ns" jitterSum="+4991839417.0ns" lastDelay="+4360002.0ns" txBytes="22500000" rxBytes="22281000" txPackets="15000" rxPackets="14854" lostPackets="146" timesForwarded="44562">
+      <delayHistogram nBins="35" >
+        <bin index="1" start="0.001" width="0.001" count="7" />
+        <bin index="2" start="0.002" width="0.001" count="429" />
+        <bin index="3" start="0.003" width="0.001" count="1898" />
+        <bin index="4" start="0.004" width="0.001" count="3072" />
+        <bin index="5" start="0.005" width="0.001" count="3162" />
+        <bin index="6" start="0.006" width="0.001" count="2520" />
+        <bin index="7" start="0.007" width="0.001" count="1663" />
+        <bin index="8" start="0.008" width="0.001" count="905" />
+        <bin index="9" start="0.009" width="0.001" count="497" />
+        <bin index="10" start="0.01" width="0.001" count="290" />
+        <bin index="11" start="0.011" width="0.001" count="165" />
+        <bin index="12" start="0.012" width="0.001" count="104" />
+        <bin index="13" start="0.013" width="0.001" count="62" />
+        <bin index="14" start="0.014" width="0.001" count="24" />
+        <bin index="15" start="0.015" width="0.001" count="21" />
+        <bin index="16" start="0.016" width="0.001" count="16" />
+        <bin index="17" start="0.017" width="0.001" count="11" />
+        <bin index="18" start="0.018" width="0.001" count="5" />
+        <bin index="34" start="0.034" width="0.001" count="3" />
+      </delayHistogram>
+      <jitterHistogram nBins="30" >
+        <bin index="0" start="0" width="0.001" count="14012" />
+        <bin index="1" start="0.001" width="0.001" count="292" />
+        <bin index="2" start="0.002" width="0.001" count="244" />
+        <bin index="3" start="0.003" width="0.001" count="159" />
+        <bin index="4" start="0.004" width="0.001" count="96" />
+        <bin index="5" start="0.005" width="0.001" count="29" />
+        <bin index="6" start="0.006" width="0.001" count="11" />
+        <bin index="7" start="0.007" width="0.001" count="3" />
+        <bin index="8" start="0.008" width="0.001" count="2" />
+        <bin index="9" start="0.009" width="0.001" count="2" />
+        <bin index="10" start="0.01" width="0.001" count="1" />
+        <bin index="11" start="0.011" width="0.001" count="1" />
+        <bin index="29" start="0.029" width="0.001" count="1" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="76" >
+        <bin index="75" start="1500" width="20" count="14854" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+  </FlowStats>
+  <Ipv4FlowClassifier>
+    <Flow flowId="1" sourceAddress="192.168.25.2" destinationAddress="192.168.11.1" protocol="17" sourcePort="49153" destinationPort="9">
+      <Dscp value="0x0" packets="15000" />
+    </Flow>
+  </Ipv4FlowClassifier>
+  <Ipv6FlowClassifier>
+  </Ipv6FlowClassifier>
+  <FlowProbes>
+    <FlowProbe index="0">
+      <FlowStats  flowId="1" packets="15000" bytes="22500000" delayFromFirstProbeSum="+0.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="1">
+    </FlowProbe>
+    <FlowProbe index="2">
+      <FlowStats  flowId="1" packets="14995" bytes="22492500" delayFromFirstProbeSum="+20813540446.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="3">
+    </FlowProbe>
+    <FlowProbe index="4">
+      <FlowStats  flowId="1" packets="14960" bytes="22440000" delayFromFirstProbeSum="+41013897873.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="5">
+    </FlowProbe>
+    <FlowProbe index="6">
+      <FlowStats  flowId="1" packets="14922" bytes="22383000" delayFromFirstProbeSum="+63175551925.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="7">
+    </FlowProbe>
+    <FlowProbe index="8">
+      <FlowStats  flowId="1" packets="14854" bytes="22281000" delayFromFirstProbeSum="+88594237071.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="9">
+    </FlowProbe>
+  </FlowProbes>
+</FlowMonitor>
